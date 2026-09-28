@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #12151e;
+  color: #e2e8f0;
+  padding: 2rem 1rem;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: #60a5fa;
+  margin-bottom: 0.3rem;
+}
+
+.subtitulo {
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+.feedback {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.feedback.exito {
+  background-color: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+  border: 1px solid #22c55e;
+}
+
+.feedback.eliminado {
+  background-color: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  border: 1px solid #ef4444;
+}
+
+.feedback.oculto {
+  display: none;
+}
+
+.panel-control, .panel-busqueda {
+  background-color: #1e2433;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.panel-control h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #f1f5f9;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.campo label {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+}
+
+input {
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  color: #fff;
+  padding: 0.65rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+input:focus {
+  border-color: #3b82f6;
+}
+
+.btn {
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-principal {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.btn-principal:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-eliminar {
+  background-color: #dc2626;
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+}
+
+.btn-eliminar:hover {
+  background-color: #b91c1c;
+}
+
+.grid-catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.card-juego {
+  background-color: #1e2433;
+  border-radius: 10px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #334155;
+}
+
+.card-juego h3 {
+  color: #f8fafc;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-juego .categoria-tag {
+  display: inline-block;
+  background-color: #334155;
+  color: #93c5fd;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+  width: fit-content;
+}
+
+.card-juego .precio-tag {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
